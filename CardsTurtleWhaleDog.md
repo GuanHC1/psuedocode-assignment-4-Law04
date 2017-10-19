@@ -1,0 +1,54 @@
+The goal is to be the first player to win all 54 cards. 
+The deck is divided evenly, with each player receiving 27 cards, dealt one at a time, face down. 
+Cards are ranked (2-10,J,Q,K,A,Jokers) from lowest to highest left to right.
+  If at any point in the game a player does not posses enough cards to continue:
+    They lose.
+
+// Player Turn Example... This does not take into account the possiblity of losing. 
+Turn the Top Card of your Deck Face Up. 
+  While Cards Facing Up is Less Than 2:
+    Wait.
+  If face value of your card is less than theirs :
+    They take cards place on the bottom of their deck.
+  Else if face value of your card is greater than theirs: 
+    They take cards place on the bottom of your deck.
+  Else:
+    While Cards Showing on top are equal:
+      Player does the following 3 times:
+      Player Plays a card face down.
+      Player flips top face down card.
+        If face value of your card is less than theirs :
+          They take cards place on the bottom of their deck.
+        Else if face value of your card is greater than theirs: 
+          They take cards place on the bottom of your deck.
+
+/*   The below is ok in simple sentences, but not complex enough to be step by step instructions. */
+
+At the beginning of a round you and your opponent turns up a card
+While the cards are equivalent: 
+  it’s a war and both players do the following actions 3 times:
+    player places the top card of their deck face down.
+  Then:
+    both players plays the top card of their deck face up.
+  If your card ranks higher than your opponent:
+    Take all the cards that are currently placed down and places them on the bottom of their deck.
+  If your opponents card ranks higher than yours:
+    Your opponent takes all the cards currently placed and places them on the bottom of their deck.
+  If the shown cards are equivelant:
+    Repeat the process of having a war.
+If your card is higher than your opponent:
+  Take both played cards and place it on the bottom of your deck
+Else:
+  Your opponet takes the card and places it on the bottom of their deck.
+    Repeat for the next round
+If one player has no cards to be played:
+  They lose
+(2-10,J,Q,K,A,Jokers) Ranked from lowest to highest left to right.
+If both players run out of cards without a winner being declared:
+  Play again.
+Otherwise continue the game as usual.
+If a player can't supply enoguh cards to continue the game:
+  They lose.
+The player with the higher card takes all cards, and so on. 
+The game ends when one player has won all the cards.
+Remember to have fun!
